@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+h1.ttxstt_finish
+{
+	font-family: Oswald !important;
+}
+:root
+{
+	--main-color: #c00;
+	--main-text-color: #fff;
+	--main-font: 'Oswald';
+	--fs: 16px;
+}
+::-webkit-scrollbar
+{
+	display: none;
+}
+html, body
+{
+	font-size: var(--fs);
+}
+.box_kqxs td div,.kqxsmiennam
+{
+	font-family: var(--main-font);
+	letter-spacing: 3px;
+}
+[class^=ten_giai]
+{
+	font-size: 1.7rem !important;
+	line-height: 1;
+}
+.kqxsmiennam
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 111;
+	width: 54%;
+	height: 100vh;
+}
+/* display none */
+.kqxsmiennam>thead>tr:first-child, .kqxsmiennam>thead>tr:nth-child(2) {
+	display: none;
+}
+
+.kqxsmiennam .loaive,.kqxsmiennam .matinh
+{
+	font-size: 2rem;
+	line-height: 1;
+}
+.kqxsmiennam .thu
+{
+	color: var(--main-color);
+}
+.thu, .tentinh, [class^=ten_giai],.kqxsmiennam .loaive,.kqxsmiennam .matinh
+{
+	background: var(--main-color);
+	color: var(--main-text-color);
+}
+.tentinh>a
+{
+	font-size: 2.5rem;
+	color: var(--main-text-color);
+}
+.kqxsmiennam td
+{
+	padding: 0;
+}
+[id^=giai]
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*[class^=giai_sau]:has(>[class*=giai])*/
+/*{*/
+/*	display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 100%;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+[id^=giai]:not([id^=giai8])
+{
+	line-height: .5 !important;
+	font-size: 2.5rem !important;
+}
+[id^=giai][id^=giaidb]
+{
+	font-size: 3.5rem !important;
+}
+[id^=giai8]
+{
+	line-height: .5 !important;
+	font-size: 4rem !important;
+}
+[id^=giai8],[id^=giai7],[id^=giai5],[id^=giai2],[id^=giai1]
+{
+	height: 100% !important;
+}
+[id^=giai6]
+{
+	height: calc(100% /3) !important;
+}
+[id^=giai4]
+{
+	height: calc(100% /7) !important;
+}
+[id^=giai3]
+{
+	height: calc(100%/2) !important;
+}
+.kqxsmiennam tbody>tr:nth-child(even)
+{
+	background: #fff6f7;
+}
+td.somien, td.sotinh
+{
+	padding: 5px;
+}
+td.somien, td.sotinh,#boxdauduoimien_online
+{
+	font-family: 'Oswald';
+	letter-spacing: 3px;
+	font-size: calc(var(--fs) * 2);
+}
+#boxdauduoimien_online
+{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 46%;
+	background: #fff;
+	z-index: 999;
+}
+#boxdauduoimien_online table table
+{
+	border: none !important;
+}
+#boxdauduoimien_online table table>tbody>tr:first-child>td,td.somien, td.sotinh
+{
+	background: var(--main-color);
+	color: var(--main-text-color);
+}
+@keyframes shake
+{
+	from
+	{
+		transform: translateX(-140%);
+	}
+	to
+	{
+		transform: translateX(100%);
+	}
+}
+#kqxshn
+{
+	position: fixed;
+	top:0;
+	width: 42.6%;
+	display: block;
+	background: var(--main-color) !important;
+	padding: .5rem 2rem;
+	right: 0;
+	z-index: 999;
+	display: block;
+	overflow: hidden;
+}
+.ttxstt_waitting
+{
+	width: 780px !important;
+}
+[class^=ttxstt]>a, h1[class^=ttxstt]
+{
+	animation: shake 7s linear 0s infinite reverse;
+	display: block;
+	background: none !important;
+	color: var(--main-text-color) !important;
+	font-size: 2rem !important;
+	width: 690px;
+	text-transform: uppercase;
+	overflow: hidden;
+	text-overflow: hidden;
+	-webkit-line-clamp: 1;
+	white-space: nowrap;
+}
+[class^=ttxstt]>a:hover, [class^=ttxstt]>a:visited
+{
+	color: var(--main-text-color)
+}
+.ttxstt_finish>a
+{
+	width: 410px !important;
+}
+h1.ttxstt
+{
+	width: 750px !important;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+[class*=giai] .loading
+{
+min-height: 40px;
+min-width: 40px;
+background-image: url('https://raw.githubusercontent.com/vubang153/tructiepxoso/main/loading-gif.gif');
+background-size: 40px
+}
+[id^=giai]
+{
+position: relative;
+}
+[id^=giai] img
+{
+visibility: hidden;
+}
+[id^=giai]:has(img)::after
+{
+	content: '';
+	min-height: 40px;
+	width: 40px;
+	background-repeat: no-repeat;
+	background-image: url('https://raw.githubusercontent.com/vubang153/tructiepxoso/main/loading-gif.gif');
+	background-size: 40px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+}
+@keyframes fadeIn
+{
+	from
+	{
+		opacity: 1;
+	}
+	to
+	{
+		opacity: 0;
+	}
+}
+#bangthongkexoso>div:nth-child(2)
+{
+	position: fixed;
+	right: 0;
+	top: 60px;
+	z-index: 999;
+	background: #c00;
+	color: #fff;
+	width: 45.3%;
+	font-family: 'Oswald';
+	letter-spacing: 3px;
+	padding-left: 10px;
+}
+.list_khongxuathienlaunhat
+{
+	font-size: 1.1rem !important;
+}
+td:has(.list_khongxuathienlaunhat)
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.box_tkdefault_title
+{
+	font-size: 1.5rem !important;
+}
+span.bol30 {
+    background-image: url(https://raw.githubusercontent.com/vubang153/tructiepxoso/main/balls.png) !important;
+    color: #000 !important;
+    font-family: 'Oswald' !important;
+	font-size: 1.1rem !important;
+	letter-spacing: 3px;
+}
+.box_dauduoi_content
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	z-index: 100;
+}
+.box_dauduoi_content:after
+{
+	content: '';
+	position: absolute;
+	width: 100%;
+	z-index: 111;
+	height: 100%;
+	background: #fff;
+	top: 0;
+	left: 0;
+}
+#boxdauduoimien_online #dauduoi_7, #boxdauduoimien_online .dauduoi_0, #boxdauduoimien_online .dauduoi_5, #boxdauduoimien_online .dauduoi_6, #boxdauduoimien_online .dauduoi_8, #boxdauduoimien_online .dauduoi_db
+{
+	background-image: none !important;
+	text-decoration: none !important;
+}
+.tick
+{
+	background-image: none !important;
+}
+
